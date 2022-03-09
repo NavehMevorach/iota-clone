@@ -1,0 +1,319 @@
+@tailwind base;
+
+@layer base {
+  @font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-Thin.otf') format('otf');
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-Regular.otf') format('otf');
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-SemiBold.otf') format('otf');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-Bold.otf') format('otf');
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Metropolis';
+    src: url('/fonts/Metropolis-Black.otf') format('otf');
+    font-weight: 900;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1 {
+    font-family: 'Metropolis', sans-serif;
+  }
+
+  h2 {
+    @apply font-bold text-3xl md:text-4xl text-center mb-4 leading-tight;
+    font-family: 'Metropolis', sans-serif;
+  }
+
+  h3 {
+    @apply font-bold text-sm md:text-base text-center capitalize mb-10;
+    font-family: 'Metropolis', sans-serif;
+  }
+  h4 {
+    @apply font-bold text-[1.75rem]  text-center mb-4 leading-tight;
+    font-family: 'Metropolis', sans-serif;
+  }
+  h5 {
+    @apply font-bold text-[1.875rem] leading-9 text-center mb-4;
+    font-family: 'Metropolis', sans-serif;
+  }
+  p {
+    @apply text-sm md:text-base text-center;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+::-moz-selection {
+  /* Code for Firefox */
+  background: #80efe4;
+}
+
+::selection {
+  background: #80efe4;
+}
+
+/* // element appears from blur, this class is applied to every span with a letter */
+.element-from-blur {
+  opacity: 0;
+  transition-duration: 2s;
+  will-change: opacity, filter, transform;
+}
+
+.element-from-blur-animate {
+  animation: element-from-blur-animate 1s normal forwards;
+  animation-delay: 0;
+  backface-visibility: hidden;
+  perspective: 1000;
+  transform: translate3d(0, 0, 0);
+  transform: translateZ(0);
+}
+
+.animation-duration-top-1,
+.animation-duration-top-11 {
+  animation-duration: 1.46747s;
+}
+.animation-duration-top-2,
+.animation-duration-top-12 {
+  animation-duration: 1.53933s;
+}
+.animation-duration-top-3,
+.animation-duration-top-13 {
+  animation-duration: 1.75153s;
+}
+.animation-duration-top-4,
+.animation-duration-top-14 {
+  animation-duration: 1.51916s;
+}
+.animation-duration-top-5,
+.animation-duration-top-15 {
+  animation-duration: 1.4816s;
+}
+.animation-duration-top-6,
+.animation-duration-top-16 {
+  animation-duration: 1.32821s;
+}
+.animation-duration-top-7 {
+  animation-duration: 1.04818s;
+}
+.animation-duration-top-8 {
+  animation-duration: 0.631792s;
+}
+.animation-duration-top-9 {
+  animation-duration: 1.18347s;
+}
+.animation-duration-top-10 {
+  animation-duration: 1.45564s;
+}
+
+.animation-duration-bottom-1,
+.animation-duration-bottom-11 {
+  animation-duration: 1.55365s;
+}
+.animation-duration-bottom-2,
+.animation-duration-bottom-12 {
+  animation-duration: 1.26815s;
+}
+.animation-duration-bottom-3,
+.animation-duration-bottom-13 {
+  animation-duration: 1.41921s;
+}
+.animation-duration-bottom-4,
+.animation-duration-bottom-14 {
+  animation-duration: 1.758089s;
+}
+.animation-duration-bottom-5,
+.animation-duration-bottom-15 {
+  animation-duration: 1.4816s;
+}
+.animation-duration-bottom-6,
+.animation-duration-bottom-16 {
+  animation-duration: 1.60849s;
+}
+.animation-duration-bottom-7 {
+  animation-duration: 0.645515s;
+}
+.animation-duration-bottom-8 {
+  animation-duration: 1.46204s;
+}
+.animation-duration-bottom-9 {
+  animation-duration: 1.29154s;
+}
+.animation-duration-bottom-10 {
+  animation-duration: 0.950954s;
+}
+
+@keyframes element-from-blur-animate {
+  from {
+    filter: blur(30px);
+    opacity: 0;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/* Filling circle animation */
+.progress-value {
+  stroke-dasharray: 339.292;
+  stroke-dashoffset: 339.292;
+  animation: progress 6s infinite;
+}
+
+@keyframes progress {
+  from {
+    stroke-dashoffset: 339.292;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation: fadeInLeft;
+  animation: fadeInLeft 1s forwards;
+}
+
+.fadeOutLeft {
+  -webkit-animation: fadeOutLeft;
+  animation: fadeOutLeft 1s forwards;
+}
+
+.fadeInTop {
+  -webkit-animation: fadeInTop;
+  animation: fadeInTop 3s forwards;
+}
+
+.fadeInBottom {
+  -webkit-animation: fadeInBottom;
+  animation: fadeInBottom 1.5s forwards;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn;
+  animation: fadeIn 2s forwards;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut;
+  animation: fadeOut 1s forwards;
+}
+
+.scaleAnimation {
+  -webkit-animation: scaleAnimation;
+  animation: scaleAnimation 2s forwards;
+}
+
+.scaleFromZero {
+  -webkit-animation: scaleFromZero;
+  animation: scaleFromZero 1.2s forwards;
+}
+
+@keyframes scaleFromZero {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Fade in from left */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+/* Fade ot to left */
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+}
+
+/* Fade it to top */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Fade it to top */
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* Fade in to top */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Fade in to top */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
