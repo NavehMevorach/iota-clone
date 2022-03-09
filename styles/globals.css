@@ -217,7 +217,7 @@
 
 .fadeOut {
   -webkit-animation: fadeOut;
-  animation: fadeOut 1s forwards;
+  animation: fadeOut 0.5s forwards;
 }
 
 .scaleAnimation {
