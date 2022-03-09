@@ -31,6 +31,7 @@ function CircleBtn({ direction = 'left', onClick }) {
           direction === 'left' ? 'left.svg' : 'right.svg'
         }`}
         className="w-[16px] h-[24px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        alt="chevron"
       />
     </button>
   )

@@ -9,6 +9,7 @@ function SocialBtn({ icon, text, background }) {
           icon === 'reddit' || icon === 'linkedin' ? '-translate-y-[2px]' : ''
         } w-5 lg:mr-2`}
         src={`/assets/icons/${icon}.svg`}
+        alt={icon}
       />
       <span className="lg:block hidden">{text}</span>
       <style jsx>{`

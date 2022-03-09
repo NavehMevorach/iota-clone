@@ -14,10 +14,15 @@ function Nav() {
       <div className="h-[80px] w-screen fixed z-50 top-0 left-0 bg-nav flex items-center justify-center">
         <div className="flex items-center lg:justify-center justify-between h-full container">
           <div className="flex justify-center items-center md:ml-0 ml-3 md:-translate-y-0 -translate-y-1">
-            <img className="block" src="/assets/icons/logo.svg" />
+            <img
+              className="block"
+              src="/assets/icons/logo.svg"
+              alt="iota logo"
+            />
             <img
               className="translate-x-1 hidden md:block"
               src="/assets/icons/logo-text.svg"
+              akt="iota text logo"
             />
           </div>
           <nav className="lg:flex hidden items-center justify-center w-full h-full">
