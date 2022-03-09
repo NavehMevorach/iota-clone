@@ -5,8 +5,8 @@ function VideoHero({ videoSrc, isActive }) {
     <div
       className={`${
         isActive
-          ? 'fadeInLeft w-screen h-screen -z-10 absolute top-0 left-0 m-0 p-0 -z-1 overflow-hidden'
-          : 'element-from-blur hidden'
+          ? 'fadeIn w-screen h-screen -z-10 absolute top-0 left-0 m-0 p-0 -z-1 overflow-hidden'
+          : 'fadeOut'
       }`}>
       <video
         src={videoSrc}
