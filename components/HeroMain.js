@@ -25,7 +25,7 @@ function HeroMain() {
   const [currentSection, isLoading, onRequestToChangeSlide] = useSlideManager()
 
   return (
-    <div className="relative z-20 h-screen w-screen flex flex-col justify-center items-center">
+    <div className="absolute z-20 h-screen w-screen flex flex-col justify-center items-center">
       {data.map((info, ind) => (
         <HeroText
           key={ind + info.title}

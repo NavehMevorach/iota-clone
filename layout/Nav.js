@@ -37,7 +37,9 @@ function Nav() {
           </nav>
           <button
             onClick={() => setIsMenuOpen((isMenuOpen) => !isMenuOpen)}
-            className={`${isMenuOpen ? 'active' : ''} menu lg:hidden `}>
+            className={`${
+              isMenuOpen ? 'active' : ''
+            } menu lg:hidden absolute top-5 left-[90%]`}>
             <svg viewBox="0 0 64 48">
               <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
               <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
@@ -61,6 +63,18 @@ function Nav() {
             <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
           </svg>
         </button>
+        <div className="w-full h-screen px-10 py-10 flex flex-col">
+          {data.map((name, ind) => (
+            <Link key={name + ind} href={`#${name}`}>
+              <a
+                onClick={() => setIsMenuOpen(false)}
+                className="flex flex-col justify-center text-black text-lg mb-10 capitalize font-bold group">
+                {name}
+                <span className="bg-light-green h-[3px] w-full scale-x-0 group-hover:scale-x-100 block mt-[5px] origin-bottom-left duration-200"></span>
+              </a>
+            </Link>
+          ))}
+        </div>
       </div>
       <style jsx>{`
         .menu {
@@ -69,7 +83,6 @@ function Nav() {
           padding: 0;
           margin: 0;
           outline: none;
-          position: relative;
           border: none;
           background: none;
           cursor: pointer;
@@ -86,7 +99,6 @@ function Nav() {
           stroke-linecap: round;
           stroke-linejoin: round;
           fill: none;
-          display: block;
           position: absolute;
         }
         .menu svg path {

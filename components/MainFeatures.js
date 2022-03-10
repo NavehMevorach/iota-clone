@@ -75,7 +75,6 @@ function MainFeatures() {
           />
         ))}
       </div>
-      <SlideNav isLoading={isLoading} changeSlide={onRequestToChangeSlide} />
       {features.map((info, ind) => (
         <FeaturesText key={ind} data={info} isActive={currentSection === ind} />
       ))}
@@ -86,6 +85,7 @@ function MainFeatures() {
           isActive={currentSection === ind}
         />
       ))}
+      <SlideNav isLoading={isLoading} changeSlide={onRequestToChangeSlide} />
     </div>
   )
 }

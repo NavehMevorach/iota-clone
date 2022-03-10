@@ -4,7 +4,7 @@ const generateKey = (pre) => {
 
 function HeroText({ isActive, title, text }) {
   return (
-    <div className={`${isActive ? '' : 'fadeOut'} h-full w-full`}>
+    <div className={`${isActive ? '' : 'hidden'} h-full w-full`}>
       <h1
         className={`absolute font-regular md:top-[calc(50%_-_80px)] top-[calc(50%_-_98px)] left-1/2 -translate-x-1/2 leading-[4.3rem] md:text-6xl text-5xl font-normal text-center text-white`}>
         <span className="md:mr-5">

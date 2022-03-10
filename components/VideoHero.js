@@ -6,7 +6,7 @@ function VideoHero({ videoSrc, isActive }) {
       className={`${
         isActive
           ? 'fadeIn w-screen h-screen -z-10 absolute top-0 left-0 m-0 p-0 -z-1 overflow-hidden'
-          : 'hidden fadeOut'
+          : ' fadeOut'
       }`}>
       <video
         src={videoSrc}

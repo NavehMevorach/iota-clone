@@ -51,13 +51,13 @@ const data = [
 ]
 
 function Pricing() {
-  const [ref, inView, entry] = useInView({
+  const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.05,
   })
   return (
     <Section id="pricing">
-      <div className="h-full w-full  py-10">
+      <div className="h-full w-full py-20">
         <div className="mb-10">
           <h3 className="uppercase text-green">Pricing</h3>
           <h2>Get Started</h2>

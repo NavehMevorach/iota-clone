@@ -48,7 +48,7 @@ function Blog() {
   })
   return (
     <Section id="blog">
-      <div className="h-full w-full bg-[#F6F8FC] flex flex-col justify-center items-center py-10">
+      <div className="h-full w-full bg-[#F6F8FC] flex flex-col justify-center items-center py-20">
         <div className="mb-10">
           <h3 className="uppercase text-green">blog</h3>
           <h2>Read our recent article</h2>
