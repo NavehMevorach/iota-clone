@@ -11,7 +11,7 @@ function HeroText({ isActive, title, text }) {
           {title[0].split('').map((letter, ind) => (
             <span
               key={generateKey(ind)}
-              className={`text-white element-from-blur  element-from-blur-animate animation-duration-top-${
+              className={`text-white element-from-blur element-from-blur-animate animation-duration-top-${
                 ind + 1
               }`}>
               {letter}

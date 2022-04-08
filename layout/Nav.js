@@ -28,7 +28,7 @@ function Nav() {
           <nav className="lg:flex hidden items-center justify-center w-full h-full">
             {data.map((name, ind) => (
               <Link key={name + ind} href={`#${name}`}>
-                <a className=' className="h-full flex flex-col items-center justify-center text-white text-sm mr-10 capitalize font-bold group"'>
+                <a className="h-full flex flex-col items-center justify-center text-white text-sm mr-10 capitalize font-bold group">
                   {name}
                   <span className="bg-light-green h-[3px] w-full scale-x-0 group-hover:scale-x-100 block mt-[5px] origin-bottom-left duration-200"></span>
                 </a>

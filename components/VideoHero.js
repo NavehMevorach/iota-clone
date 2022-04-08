@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 function VideoHero({ videoSrc, isActive }) {
+  const videoRef = useRef()
+
+  useEffect(() => {
+    videoRef.current?.load()
+  }, [videoSrc])
+
   return (
     <div
       className={`${
@@ -9,6 +15,7 @@ function VideoHero({ videoSrc, isActive }) {
           : ' fadeOut'
       }`}>
       <video
+        ref={videoRef}
         src={videoSrc}
         className={`min-h-full min-w-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover`}
         autoPlay
